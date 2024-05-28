@@ -50,15 +50,8 @@ public class DonHangServlet extends HttpServlet {
 			Map<String, BillProduct> ds = (Map<String, BillProduct>) session.getAttribute("cart");
 			double tong = (double) session.getAttribute("fullPrice");
 			String fee = (String) session.getAttribute("fee");
-
-			int feeInt;
-			try{
-				feeInt  = Integer.parseInt(fee)/1000;
-				tong = tong +feeInt;
-			} catch (Exception e){
-				feeInt = 0;
-				e.printStackTrace();
-			}
+			int feeInt  = Integer.parseInt(fee)/1000;
+			tong = tong +feeInt;
 			String tongS = String.valueOf(tong);
 			if(fName==null) fName = tk.getUserName();
 			if(telephone==null) telephone = tk.getPhoneNum();
@@ -79,6 +72,7 @@ public class DonHangServlet extends HttpServlet {
 			}
 			if(radio.equals("button2")) {
 				request.setAttribute("total", tong);
+
 				session.removeAttribute("sizeCart");
 				session.removeAttribute("cart");
 				request.getRequestDispatcher("paypal.jsp").forward(request, response);

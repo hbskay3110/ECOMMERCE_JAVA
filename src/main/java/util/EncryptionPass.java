@@ -22,7 +22,7 @@ public class EncryptionPass {
 	}
 	public static void main(String[] args) {
 		System.out.println(toSHA1("anphan2192"));
-		System.out.println(toSHA1("hbskay123"));
+		System.out.println(toSHA1("phanan219"));
 	}
 
 }

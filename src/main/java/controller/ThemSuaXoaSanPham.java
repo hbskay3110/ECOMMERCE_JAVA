@@ -54,7 +54,7 @@ public class ThemSuaXoaSanPham extends HttpServlet {
 			new ProductDAO().delete(maSP);
 			Log log = new Log(Log.DANGER,tk.getNameAcc(),src,"Delete" + p.toString(),1);
 			new LogDAO().add(log,request);
-			getServletContext().getRequestDispatcher("/startbootstrap-sb-admin-2-master/manage?loai=product").forward(request, response);
+			getServletContext().getRequestDispatcher("/startbootstrap-sb-admin-2-master/manageOder?loai=product").forward(request, response);
 		}else if(chucNang.equals("Them")) {
 			String maSP = request.getParameter("maSP");
 			String tenSP = request.getParameter("productName");

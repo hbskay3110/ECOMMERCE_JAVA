@@ -48,7 +48,7 @@
 	}
 
 	.main {
-		height: auto;
+		height: 640px;
 		background-color: #53e736;
 	}
 

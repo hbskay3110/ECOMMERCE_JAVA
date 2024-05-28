@@ -140,13 +140,8 @@ public class ProductDAO implements ObjectDAO {
 				ppstm.setInt(6, size);
 				rs =ppstm.executeQuery();
 			}else if(loaiSP!=null && (txtSearch==null|| txtSearch.equals(""))){
-				if(attribute.equals("priceP")){
-					query = "with x as (select sp.*, ROW_NUMBER() over (order by priceP "+proviso+ ") as r from Products sp join DetailProducts ct on sp.idP = ct.idP where typeP in(?))\r\n"
-							+ "select * from x where r between ?*?-(?-1) and ?*?";
-				}else {
-					query = "with x as (select sp.*, ROW_NUMBER() over (order by typeP "+proviso+ ") as r from Products sp join DetailProducts ct on sp.idP = ct.idP where typeP in(?))\r\n"
-							+ "select * from x where r between ?*?-(?-1) and ?*?";
-				}
+				query = "with x as (select sp.*, ROW_NUMBER() over (order by "+attribute+" "+proviso+ ") as r from Products sp join DetailProducts ct on sp.idP = ct.idP where typeP in(?))\r\n"
+						+ "select * from x where r between ?*?-(?-1) and ?*?";
 				ppstm = connect.prepareStatement(query);
 				ppstm.setString(1, loaiSP);
 				ppstm.setInt(2, index);

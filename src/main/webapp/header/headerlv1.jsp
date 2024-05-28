@@ -188,8 +188,7 @@
 					<div class="header__search ">
 						<div class="header__search-input-wrap">
 							<input type="text" class="header__search-input"
-								placeholder="<fmt:message
-											key="searchPlace" bundle="${language}"></fmt:message>" name="txtSearch">
+								placeholder="Nhập để tìm kiếm sản phẩm" name="txtSearch">
 
 						</div>
 

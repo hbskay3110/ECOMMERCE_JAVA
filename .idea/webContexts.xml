@@ -3,7 +3,6 @@
   <component name="WebContextManager">
     <option name="state">
       <map>
-        <entry key="file://$PROJECT_DIR$/src/main/webapp/SearchProduct.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/product/product-details.jsp" value="file://$PROJECT_DIR$/src/main/webapp/product" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageDiscountCode.jsp" value="file://$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master" />

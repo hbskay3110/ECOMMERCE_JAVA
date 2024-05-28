@@ -91,8 +91,8 @@
 <%--							<td>${sp.soLuongNhap}</td> --%>
 							<td>${sp.sale}</td>
 							
-							<td><a href="<c:url value="/startbootstrap-sb-admin-2-master/ThemSuaXoaSanPham?maSP=${sp.idP}&chucNang=Xoa"></c:url>"><button class="btn btn-warning">Xóa</button></a></td>
-							<td><a href="<c:url value="/startbootstrap-sb-admin-2-master/forwardRepair?id=${sp.idP}"></c:url>"><button class="btn btn-primary">Sửa</button></a></td>
+							<td><a href="<c:url value="/startbootstrap-sb-admin-2-master/ThemSuaXoaSanPham?maSP=${sp.idP}&chucNang=Xoa"></c:url>"><button class="btn btn-warning"><i class="fa fa-trash bg-danger"></i></button></a></td>
+							<td><a href="<c:url value="/startbootstrap-sb-admin-2-master/forwardRepair?id=${sp.idP}"></c:url>"><button class="btn btn-primary"><i class="fas fa-pencil" ></i></button></a></td>
 						</tr> 					
 						</c:forEach>
 					</tbody></table> 

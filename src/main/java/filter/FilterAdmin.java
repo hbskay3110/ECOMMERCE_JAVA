@@ -46,11 +46,11 @@ public class FilterAdmin implements Filter{
 		
 		HttpSession session = ((HttpServletRequest) request).getSession();
 		Account tk = (Account) session.getAttribute("userLogin");
-		String chucNang = httpRequest.getParameter("chucNang");
+		
 		if((tk == null || tk.getRole().equals("0")) && !url.contains("Login.jsp") && !url.contains("/Admin")) {
 			httpRequest.getRequestDispatcher("/startbootstrap-sb-admin-2-master/Login.jsp").forward(httpRequest, httpResponse);
 		}else {
-			if(chucNang != null && chucNang.equals("Xoa")){
+			if(url.contains("Xoa")){
 				if(!tk.getRole().equals("2")){
 					httpRequest.getRequestDispatcher("/startbootstrap-sb-admin-2-master/404.jsp").forward(httpRequest, httpResponse);;
 				}else {

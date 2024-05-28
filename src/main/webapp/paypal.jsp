@@ -49,15 +49,9 @@
               addressOder = addressDetail + ","+ addressOder;
               Account tk = (Account) session.getAttribute("userLogin");
               double tong = (double) session.getAttribute("fullPrice");
-             String fee = (String) session.getAttribute("fee");
-			int feeInt;
-			try{
-				feeInt  = Integer.parseInt(fee)/1000;
-				tong = tong +feeInt;
-			} catch (Exception e){
-				feeInt = 0;
-				e.printStackTrace();
-			}
+              String fee = (String) session.getAttribute("fee");
+              int feeInt  = Integer.parseInt(fee)/1000;
+              tong = tong +feeInt;
               String tongS = String.valueOf(tong);
               OrderProduct dh = new OrderProduct(id, tk.getNameAcc(), date,dateDeliveryOder, tongS, telephone, fName, addressOder, note,"1", "0");
               new OrderDAO().add(dh);%>

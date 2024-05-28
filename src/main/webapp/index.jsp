@@ -1,18 +1,6 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="model.ConnectToDatabase"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
-<%--  <fmt:setLocale value="vi_VN"/> --%>
-<c:set var="lg" value="${sessionScope.language}"></c:set>
-<c:if test="${lg eq 'US' }">
-	<fmt:setLocale value="en_US" />
-</c:if>
-<c:if test="${lg eq 'VN' || lg == null }">
-	<fmt:setLocale value="vi_VN" />
-</c:if>
-<%@page isELIgnored="false"%>
-<fmt:setBundle basename="app" var="language" />
 <%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,11 +33,6 @@
 
 
 <title>Shop Brother</title>
-	<style>
-		.add-to-wishlist .active {
-			color: red;
-		}
-	</style>
 </head>
 
 <body>
@@ -62,13 +45,11 @@
 						<nav class="category">
 							<h3>${sessionScope.code}</h3>
 							<h3 class="category__heading">
-								<i class="category__heading-icon fas fa-list"></i><fmt:message
-									key="category" bundle="${language}"></fmt:message>
+								<i class="category__heading-icon fas fa-list"></i>Danh Mục
 							</h3>
 							<ul class="category-list">
 								<li class="category-item category-item--active">
-								<a href="/renderSP"	class="category-item__link"><fmt:message
-										key="all" bundle="${language}"></fmt:message></a></li>
+								<a href="/renderSP"	class="category-item__link">Tất Cả</a></li>
 								<c:forEach items="${listLoai}" var="i">
 									<li class="category-item"><a href="<c:url value="/SearchSP?attribute=LoaiSP&proviso=ASC&loaiSP=${i}"></c:url>"
 									class="category-item__link">${i}</a></li>
@@ -78,23 +59,21 @@
 					</div>
 					<div class="col l-10 m-12 c-12">
 						<div class="home-filter hide-on-mobile-tablet">
-							<span class="home-filter__label"><fmt:message
-									key="sortedBy" bundle="${language}"></fmt:message></span>
-							<button class="home-filter__btn btn-deafault btn btn-primary" id="YeuThich"><a class="btn-fiter" href="<c:url value="/SearchSP?attribute=YeuThich&proviso=DESC&loaiSP=${loaiSP}&txtSearch=${txtSearch}"></c:url>">
-								<fmt:message key="popular" bundle="${language}"></fmt:message></a></button>
-							<button class="home-filter__btn btn" id="SPMoi"><a class="btn-fiter" href="<c:url value="/SearchSP?attribute=SPMoi&proviso=DESC&loaiSP=${loaiSP}&txtSearch=${txtSearch}"></c:url>"><fmt:message
-									key="latest" bundle="${language}"></fmt:message></a></button>
-							<button class="home-filter__btn btn" id="SoLuongBan"><a class="btn-fiter" href="<c:url value="/SearchSP?attribute=SoLuongBan&proviso=DESC&loaiSP=${loaiSP}&txtSearch=${txtSearch}"></c:url>"><fmt:message
-									key="selling" bundle="${language}"></fmt:message></a></button>
+							<span class="home-filter__label">Sắp xếp theo</span>
+							<button class="home-filter__btn btn-deafault btn btn-primary" id="YeuThich"><a class="btn-fiter" href="<c:url value="/SearchSP?attribute=YeuThich&proviso=DESC&loaiSP=${loaiSP}&txtSearch=${txtSearch}"></c:url>">Phổ biến</a></button>
+							<button class="home-filter__btn btn" id="SPMoi"><a class="btn-fiter" href="<c:url value="/SearchSP?attribute=SPMoi&proviso=DESC&loaiSP=${loaiSP}&txtSearch=${txtSearch}"></c:url>">Mới nhất</a></button>
+							<button class="home-filter__btn btn" id="SoLuongBan"><a class="btn-fiter" href="<c:url value="/SearchSP?attribute=SoLuongBan&proviso=DESC&loaiSP=${loaiSP}&txtSearch=${txtSearch}"></c:url>">Bán chạy</a></button>
 							<div class="select-input">
 
-								<span class="select-input__label"><fmt:message key="price" bundle="${language}"></fmt:message></span> <i
+								<span class="select-input__label">Giá</span> <i
 									class="select-input__icon fas fa-chevron-down"></i>
 								<ul class="select-input__list">
 									<li class="select-input__item"><a href="<c:url value="/SearchSP?attribute=priceP&proviso=ASC"></c:url>"
-										class="select-input__link select-input__link--up"><fmt:message key="PriceLowtoHigh" bundle="${language}"></fmt:message></a></li>
+										class="select-input__link select-input__link--up">Giá:
+											Thấp đến cao</a></li>
 									<li class="select-input__item"><a href="<c:url value="/SearchSP?attribute=priceP&proviso=DESC"></c:url>"
-										class="select-input__link select-input__link--down"><fmt:message key="PriceHightoLow" bundle="${language}"></fmt:message></a></li>
+										class="select-input__link select-input__link--down">Giá:
+											Cao đến thấp</a></li>
 								</ul>
 							</div>
 							<div class="home-filter__page">
@@ -158,7 +137,9 @@
 												</div>
 											</a>
 											<div class="home-produt-item-action">
-												<span class="home-produt-item-like ">
+												<span class="home-produt-item-like "> <i
+													class="home-produt-item-like-icon-empty far fa-heart"></i>
+													<i class="home-produt-item-like-icon-fill fas fa-heart"></i>
 												</span> <span class="home-produt-item-rating"> <i
 													class="home-produt-item__start-gold fas fa-star"></i> <i
 													class="home-produt-item__start-gold fas fa-star"></i> <i
@@ -180,9 +161,10 @@
 											</c:if>
 											<div class="home-produt-item__sale-off">
 												<span class="home-produt-item__sale-off-percent">${i.sale}
-													%</span> <span class="home-produt-item__sale-off-label"><fmt:message key="sale" bundle="${language}"></fmt:message></span>
+													%</span> <span class="home-produt-item__sale-off-label">Giảm</span>
 											</div>
-
+											<button class="btn btn-primary btn-add-product">Thêm
+												vào giỏ hàng</button>
 										</div>
 									</div>
 								</c:forEach>

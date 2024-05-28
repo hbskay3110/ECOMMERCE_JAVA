@@ -72,7 +72,6 @@
 								<th>Trình duyệt</th>
 								<th>Nội dung</th>
 								<th>Ngày thực thi</th>
-                                <th>Mức độ</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -89,7 +88,6 @@
                                     <td>${l.userAgent}</td>
                                     <td>${l.content}</td>
                                     <td>${l.creatAt}</td>
-                                    <td>INFO</td>
                                 </tr>
                             </c:if>
                             <c:if test="${l.level==3}">
@@ -102,7 +100,6 @@
                                     <td>${l.userAgent}</td>
                                     <td>${l.content}</td>
                                     <td>${l.creatAt}</td>
-                                    <td>DANGER</td>
                                 </tr>
                             </c:if>
                             <c:if test="${l.level==2}">
@@ -115,7 +112,6 @@
                                     <td>${l.userAgent}</td>
                                     <td>${l.content}</td>
                                     <td>${l.creatAt}</td>
-                                    <td>WARNING</td>
                                 </tr>
                             </c:if>
 
