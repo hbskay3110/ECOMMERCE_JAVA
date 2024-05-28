@@ -1,0 +1,113 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id "org.hidetake.ssh" version "2.11.2"
+    id 'war'
+}
+repositories {
+
+    mavenCentral()
+
+}
+dependencies {
+
+    api 'javax.servlet:javax.servlet-api:4.0.1'
+
+    api 'javax.mail:javax.mail-api:1.6.2'
+    api 'com.restfb:restfb:2.3.0'
+    api 'commons-logging:commons-logging:1.2'
+    api group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.5'
+    api 'com.google.code.gson:gson:2.8.2'
+    api 'com.microsoft.sqlserver:mssql-jdbc:9.4.1.jre11'
+    api 'javax.mail:javax.mail-api:1.6.2'
+    api 'com.sun.mail:javax.mail:1.6.2'
+    api 'javax.servlet:jstl:1.2'
+    api 'javax.ws.rs:javax.ws.rs-api:2.1'
+    api 'org.json:json:20210307'
+
+    api 'org.glassfish.jersey.core:jersey-client:2.30.1'
+    api 'com.github.lbovolini:ObjectMapper:0.2.3'
+    // Thêm dependency cho taglibs-standard-spec
+//    api 'taglibs:taglibs-standard-spec:1.2.5'
+
+    // Thêm dependency cho taglibs-standard-impl
+    runtimeOnly group: 'org.apache.taglibs', name: 'taglibs-standard-impl', version: '1.2.5'
+    api 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+    api 'com.google.code.gson:gson:2.8.9'
+    api 'mysql:mysql-connector-java:8.0.32'
+    api 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+
+    api 'org.apache.poi:poi:5.1.0'
+    api 'org.apache.poi:poi-ooxml:5.1.0'
+    api 'com.microsoft.sqlserver:mssql-jdbc:9.2.1.jre11'
+    api 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    api 'org.apache.logging.log4j:log4j-core:2.14.1'
+    api 'com.google.cloud.sql:mysql-socket-factory:1.2.2'
+}
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+description = 'AnimeWeb Maven Webapp'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+apply plugin: 'org.hidetake.ssh'
+remotes {
+    host {
+        host = '34.143.252.234'
+        user = 'g20130298'
+        identity = file('C:/Users/Kien/.ssh/id_rsa')
+    }
+}
+ssh.settings {
+    knownHosts = allowAnyHosts
+}
+
+task docker_app_start {
+    doLast {
+        println 'begin docker_app_start'
+        ssh.run {
+            session(remotes.host) {
+                execute 'docker stop tomcat9', ignoreError: true
+                execute 'docker run -it --rm -d ' +
+                        '--name tomcat9 ' +
+                        '-v /usr/deploy:/usr/local/tomcat/webapps ' +
+                        '-p 80:8080 ' +
+                        'tomcat:9.0&'
+            }
+        }
+    }
+}
+task docker_upload_file_to_server {
+    doLast {
+        println 'begin docker_upload_file_to_server'
+        ssh.run {
+            session(remotes.host) {
+                remove '/usr/deploy/WebBanHang.war'
+
+                put from: "${project.projectDir}/build/libs/WebBanHang-1.0-SNAPSHOT.war",
+                        into: "/usr/deploy/WebBanHang.war"
+            }
+        }
+    }
+}
+task docker_deploy {
+    docker_deploy.dependsOn docker_app_start
+    docker_deploy.dependsOn docker_upload_file_to_server
+    docker_deploy.dependsOn build
+    tasks.getByName('docker_app_start').mustRunAfter docker_upload_file_to_server
+}
+

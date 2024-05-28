@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92a98c1c-bd05-48d0-8805-2b1c04610490" name="Changes" comment="update lỗi">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/OtpDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Otp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/apiLogistic/LoadDataApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/apiLogistic/LoadDataApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/CartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DetailOder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DetailOder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DonHangServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DonHangServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DuyetXoaXemDonHang.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DuyetXoaXemDonHang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/FavouritesServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/FavouritesServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/LoginFacebookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/LoginFacebookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/LoginSerlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/LoginSerlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/LoginWithGoogle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/LoginWithGoogle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/Manage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/Manage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ManageOder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/RestFB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/RestFB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/SearchSP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/SearchSP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaSanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaSanPham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaServerlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaServerlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/forwardRepair.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/forwardRepair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/productDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/productDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/renderSP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/renderSP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/searchAjax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/AccountDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/DetailOrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/DetailOrderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/OrderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/ProductDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/ProductDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/filter/FilterAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/filter/FilterAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ConnectToDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ConnectToDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/util/EncryptionPass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/util/EncryptionPass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/WebBanHang-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/WebBanHang-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/app_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/app_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/app_vi_VN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/app_vi_VN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DonHangServlet.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DonHangServlet.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LoginSerlet.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DonHangServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DonHangServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ThemSuaXoaSanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ThemSuaXoaSanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filter/FilterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/FilterAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/EncryptionPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/EncryptionPass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app_vi_VN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app_vi_VN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/SearchProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/SearchProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header/headerlv1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header/headerlv1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header/headerlv2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header/headerlv2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/paypal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/paypal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/manageLog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/manageLog.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.idea/jarRepositories.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2OlndHTa4Xd8GHVPlL0b7id4t5E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/E-Food&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\model" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\dao" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\controller" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\webapp\assets\img\dataComment" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\webapp\startbootstrap-sb-admin-2-master" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\webapp" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+      <recent name="dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.WebBanHang4 [docker_deploy]">
+    <configuration name="EncryptionPass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.EncryptionPass" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FavouriteProductDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao.FavouriteProductDAO" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoadDataApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="apiLogistic.LoadDataApi" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiLogistic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao.ProductDAO" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebBanHang4 [docker_deploy]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="docker_deploy" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/WebBanHang" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.71" />
+          <option name="path" value="H:/apache-tomcat-9.0.71/apache-tomcat-9.0.71" />
+          <option name="version" value="9.0.71.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EncryptionPass" />
+      <item itemvalue="Application.LoadDataApi" />
+      <item itemvalue="Application.ProductDAO" />
+      <item itemvalue="Application.FavouriteProductDAO" />
+      <item itemvalue="Gradle.WebBanHang4 [docker_deploy]" />
+      <item itemvalue="Smart Tomcat.Unnamed" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.WebBanHang4 [docker_deploy]" />
+        <item itemvalue="Application.LoadDataApi" />
+        <item itemvalue="Application.EncryptionPass" />
+        <item itemvalue="Application.ProductDAO" />
+        <item itemvalue="Application.FavouriteProductDAO" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92a98c1c-bd05-48d0-8805-2b1c04610490" name="Changes" comment="" />
+      <created>1682144121863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682144121863</updated>
+      <workItem from="1682144123335" duration="616000" />
+      <workItem from="1683001225007" duration="14755000" />
+      <workItem from="1683173478554" duration="13741000" />
+      <workItem from="1683259267925" duration="10619000" />
+      <workItem from="1683345213186" duration="18249000" />
+      <workItem from="1684030387955" duration="23259000" />
+      <workItem from="1684398704767" duration="11354000" />
+      <workItem from="1684412796316" duration="10843000" />
+      <workItem from="1684492401728" duration="7762000" />
+      <workItem from="1684585516371" duration="573000" />
+      <workItem from="1684633633825" duration="8141000" />
+      <workItem from="1684747508256" duration="5663000" />
+      <workItem from="1685608639607" duration="7006000" />
+      <workItem from="1685964290701" duration="3973000" />
+      <workItem from="1686024599214" duration="4569000" />
+      <workItem from="1686042921950" duration="493000" />
+      <workItem from="1686301091395" duration="529000" />
+      <workItem from="1686302525031" duration="2396000" />
+      <workItem from="1686365627582" duration="563000" />
+      <workItem from="1686410683448" duration="9000" />
+      <workItem from="1686456795298" duration="1853000" />
+      <workItem from="1686644468626" duration="11311000" />
+      <workItem from="1686658192022" duration="4212000" />
+      <workItem from="1686712163942" duration="732000" />
+      <workItem from="1686717533113" duration="3262000" />
+      <workItem from="1686733604123" duration="3792000" />
+      <workItem from="1686754503318" duration="993000" />
+      <workItem from="1686799973596" duration="17896000" />
+      <workItem from="1687393197079" duration="13931000" />
+      <workItem from="1687416362772" duration="1891000" />
+      <workItem from="1690862338045" duration="177000" />
+      <workItem from="1694488549221" duration="340000" />
+      <workItem from="1694489891836" duration="1701000" />
+      <workItem from="1698313153901" duration="673000" />
+      <workItem from="1700664081704" duration="9000" />
+      <workItem from="1700664873131" duration="2418000" />
+      <workItem from="1700744074595" duration="1171000" />
+      <workItem from="1713413903114" duration="12000" />
+      <workItem from="1716904283884" duration="693000" />
+      <workItem from="1716905593804" duration="330000" />
+    </task>
+    <task id="LOCAL-00001" summary="update login google">
+      <created>1682144565239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682144565239</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sử dụng datatable trong phần quản lý">
+      <created>1683002290099</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683002290099</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Thống kê doanh thu và số lượng truy cập trang web">
+      <created>1683259528694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683259528694</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update login facebook">
+      <created>1684030952875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684030952875</updated>
+    </task>
+    <task id="LOCAL-00005" summary="export Exel">
+      <created>1684399779031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684399779031</updated>
+    </task>
+    <task id="LOCAL-00006" summary="export Exel">
+      <created>1684399930088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684399930088</updated>
+    </task>
+    <task id="LOCAL-00007" summary="export Exel">
+      <created>1684399962466</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684399962466</updated>
+    </task>
+    <task id="LOCAL-00008" summary="export Exel">
+      <created>1684400226175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684400226175</updated>
+    </task>
+    <task id="LOCAL-00009" summary="export Exel">
+      <created>1684400250274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684400250274</updated>
+    </task>
+    <task id="LOCAL-00010" summary="export Exel">
+      <created>1684401085694</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401085694</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update Deloy">
+      <created>1684492916517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684492916517</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update Deloy">
+      <created>1686843406146</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686843406160</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update Deloy">
+      <created>1686843588855</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686843588855</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update Deloy">
+      <created>1686843749362</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686843749362</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update lỗi">
+      <created>1687362150421</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687362150421</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update login google" />
+    <MESSAGE value="sử dụng datatable trong phần quản lý" />
+    <MESSAGE value="Thống kê doanh thu và số lượng truy cập trang web" />
+    <MESSAGE value="update login facebook" />
+    <MESSAGE value="export Exel" />
+    <MESSAGE value="update Deloy" />
+    <MESSAGE value="update recapcha" />
+    <MESSAGE value="update lỗi" />
+    <option name="LAST_COMMIT_MESSAGE" value="update lỗi" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp</url>
+          <line>137</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/filter/FilterAdmin.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
