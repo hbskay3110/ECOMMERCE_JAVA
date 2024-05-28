@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+/* panigation */
+.panigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panigation-item{
+    list-style: none;
+    margin: 0 6px;
+}
+.panigation-item__link{
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 200    ;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+    
+}
+.panigation-item-active .panigation-item__link{
+    background-color:  #74e75d;
+    color: #fff;
+}
+.panigation-item-active .panigation-item__link:hover{
+    background-color: #74e75d;
+}

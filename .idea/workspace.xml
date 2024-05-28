@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92a98c1c-bd05-48d0-8805-2b1c04610490" name="Changes" comment="update recapcha">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DiscountCodeServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ExportExel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/controller/FavouritesServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/controller/Manage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/controller/RepairDiscount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/DetailOrderDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/DetailProductDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/DiscountCodeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/FavouriteProductDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/ImageDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/OrderDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/dao/ViewDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/filter/FilterAdmin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/model/DiscountCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/model/Favourite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/model/View.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/EnterOtp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/SearchProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/WEB-INF/classes/model/ConnectToDatabase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/header/headerlv1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/newPassword.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/product/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/product/checkout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/product/product-details.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/WebBanHang-1.0-SNAPSHOT.war/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DonHangServlet.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LoginSerlet.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DiscountCodeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ExportExel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FavouritesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Manage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/RepairDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DiscountCodeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/FavouriteProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ImageDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ViewDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/DiscountCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Favourite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/dataComment/khen-thuong-dot-xuat-trong-Toa-an.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/aokhoac015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/product/vay021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/paypal.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageDiscountCode.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/addDiscountCode.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/manageLog.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/repairDiscountCode.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_example___WebBanHang_1_0_SNAPSHOT_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_example___WebBanHang_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_21_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_microsoft_sqlserver_mssql_jdbc_9_4_1_jre11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mysql_mysql_connector_j_8_0_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_restfb_restfb_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_mail_javax_mail_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_ws_rs_jakarta_ws_rs_api_2_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_mail_javax_mail_api_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_javax_ws_rs_api___packaging_type__2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_4_0_b180830_0359.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_fluent_hc_4_5_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_hk2_external_jakarta_inject_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_hk2_osgi_resource_locator_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jersey_core_jersey_client_2_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jersey_core_jersey_common_2_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/WebBanHang.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/WebBanHang.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/WebBanHang.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/CartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DetailOder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DetailOder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DetailUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DetailUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DonHangServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DonHangServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/DuyetXoaXemDonHang.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/DuyetXoaXemDonHang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ForgotPass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ForgotPass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ForgotPass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ForgotPass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/LoginFacebookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/LoginFacebookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/LoginSerlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/LoginSerlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ManageOder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ManageOder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/RestFB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/RestFB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/SearchSP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/SearchSP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaSanPham.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaSanPham.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaServerlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ThemSuaXoaServerlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/forwardRepair.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/forwardRepair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/productDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/productDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/renderSP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/renderSP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/AccountDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/DS_DonHangDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/DS_DonHangDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/DonHangDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/LogDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/LogDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dao/ProductDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dao/ProductDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ConnectToDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ConnectToDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/OrderProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/WebBanHang-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/WebBanHang-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/app_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/app_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DetailOder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DetailOder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DetailUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DetailUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DonHangServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DonHangServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DuyetXoaXemDonHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DuyetXoaXemDonHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ForgotPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ForgotPass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginFacebookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginFacebookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginSerlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginSerlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ManageOder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RestFB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RestFB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ThemSuaXoaSanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ThemSuaXoaSanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ThemSuaXoaServerlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ThemSuaXoaServerlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/forwardRepair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/forwardRepair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/productDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/productDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/renderSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/renderSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/searchAjax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ChiTietSanPhamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DetailProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DS_DonHangDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DetailOrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DonHangDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/LogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/LogDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/FilterAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ConnectToDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ConnectToDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/OrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/DisplayComment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DisplayComment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/EnterOtp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/EnterOtp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/SearchProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/SearchProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer/footerlv1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer/footerlv1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/forgotPass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forgotPass.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header/headerLeftAmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header/headerLeftAmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header/headerlv1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header/headerlv1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/newPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/newPassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/DetailOder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/DetailOder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/assets/js/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/assets/js/address.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/my-account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/my-account.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/product-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/product-details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/DetailOder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/DetailOder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageOder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageOder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/ManageProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/addProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/addUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/manageUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/manageUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/repairSP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/repairSP.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebBanHang" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.idea/jarRepositories.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2OlndHTa4Xd8GHVPlL0b7id4t5E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WebBanHang/WebBanHang4/src/main/java/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\model" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\dao" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\controller" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\webapp\assets\img\dataComment" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\webapp\startbootstrap-sb-admin-2-master" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\webapp" />
+      <recent name="D:\WebBanHang\WebBanHang4\src\main\java\controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+      <recent name="dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.WebBanHang4 [docker_deploy]">
+    <configuration name="ConnectToDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.ConnectToDatabase" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FavouriteProductDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao.FavouriteProductDAO" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao.ProductDAO" />
+      <module name="WebBanHang.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebBanHang4 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebBanHang4 [docker_deploy]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="docker_deploy" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/WebBanHang" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.71" />
+          <option name="path" value="H:/apache-tomcat-9.0.71/apache-tomcat-9.0.71" />
+          <option name="version" value="9.0.71.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ProductDAO" />
+      <item itemvalue="Application.FavouriteProductDAO" />
+      <item itemvalue="Application.ConnectToDatabase" />
+      <item itemvalue="Gradle.WebBanHang4 [build]" />
+      <item itemvalue="Gradle.WebBanHang4 [docker_deploy]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.WebBanHang4 [docker_deploy]" />
+        <item itemvalue="Application.ProductDAO" />
+        <item itemvalue="Application.FavouriteProductDAO" />
+        <item itemvalue="Gradle.WebBanHang4 [build]" />
+        <item itemvalue="Application.ConnectToDatabase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92a98c1c-bd05-48d0-8805-2b1c04610490" name="Changes" comment="" />
+      <created>1682144121863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682144121863</updated>
+      <workItem from="1682144123335" duration="616000" />
+      <workItem from="1683001225007" duration="14755000" />
+      <workItem from="1683173478554" duration="13741000" />
+      <workItem from="1683259267925" duration="10619000" />
+      <workItem from="1683345213186" duration="18249000" />
+      <workItem from="1684030387955" duration="23259000" />
+      <workItem from="1684398704767" duration="11354000" />
+      <workItem from="1684412796316" duration="10843000" />
+      <workItem from="1684492401728" duration="7762000" />
+      <workItem from="1684585516371" duration="573000" />
+      <workItem from="1684633633825" duration="8141000" />
+      <workItem from="1684747508256" duration="5663000" />
+      <workItem from="1685608639607" duration="7006000" />
+      <workItem from="1685964290701" duration="3973000" />
+      <workItem from="1686024599214" duration="4569000" />
+      <workItem from="1686042921950" duration="493000" />
+      <workItem from="1686301091395" duration="529000" />
+      <workItem from="1686302525031" duration="2396000" />
+      <workItem from="1686365627582" duration="563000" />
+      <workItem from="1686410683448" duration="9000" />
+      <workItem from="1686456795298" duration="1853000" />
+      <workItem from="1686644468626" duration="11311000" />
+      <workItem from="1686658192022" duration="4212000" />
+      <workItem from="1686712163942" duration="732000" />
+      <workItem from="1686717533113" duration="3262000" />
+      <workItem from="1686733604123" duration="3792000" />
+      <workItem from="1686754503318" duration="993000" />
+      <workItem from="1686799973596" duration="17896000" />
+    </task>
+    <task id="LOCAL-00001" summary="update login google">
+      <created>1682144565239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682144565239</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sử dụng datatable trong phần quản lý">
+      <created>1683002290099</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683002290099</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Thống kê doanh thu và số lượng truy cập trang web">
+      <created>1683259528694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683259528694</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update login facebook">
+      <created>1684030952875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684030952875</updated>
+    </task>
+    <task id="LOCAL-00005" summary="export Exel">
+      <created>1684399779031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684399779031</updated>
+    </task>
+    <task id="LOCAL-00006" summary="export Exel">
+      <created>1684399930088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684399930088</updated>
+    </task>
+    <task id="LOCAL-00007" summary="export Exel">
+      <created>1684399962466</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684399962466</updated>
+    </task>
+    <task id="LOCAL-00008" summary="export Exel">
+      <created>1684400226175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684400226175</updated>
+    </task>
+    <task id="LOCAL-00009" summary="export Exel">
+      <created>1684400250274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684400250274</updated>
+    </task>
+    <task id="LOCAL-00010" summary="export Exel">
+      <created>1684401085694</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401085694</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update Deloy">
+      <created>1684492916517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684492916517</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update Deloy">
+      <created>1686843406146</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686843406160</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update Deloy">
+      <created>1686843588855</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686843588855</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update Deloy">
+      <created>1686843749362</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686843749362</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update login google" />
+    <MESSAGE value="sử dụng datatable trong phần quản lý" />
+    <MESSAGE value="Thống kê doanh thu và số lượng truy cập trang web" />
+    <MESSAGE value="update login facebook" />
+    <MESSAGE value="export Exel" />
+    <MESSAGE value="update Deloy" />
+    <MESSAGE value="update recapcha" />
+    <option name="LAST_COMMIT_MESSAGE" value="update recapcha" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/startbootstrap-sb-admin-2-master/index.jsp</url>
+          <line>163</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/filter/FilterAdmin.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

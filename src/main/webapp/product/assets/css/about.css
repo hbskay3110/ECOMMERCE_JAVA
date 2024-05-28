@@ -1,0 +1,11 @@
+.hover08 img {
+    padding: 5px 5px;
+	/* -webkit-filter: grayscale(100%); */
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover08:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
